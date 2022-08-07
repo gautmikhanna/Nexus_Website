@@ -1,14 +1,19 @@
-const load = async (page) => {
+const load = async (page, isReload = false) => {
   fetch("./content/" + pages[page] + ".html")
     .then((response) => response.text())
     .then((data) => {
-      document.querySelector("main").innerHTML = data;
+      if (isReload) {
+        document.querySelector(".loader").classList.add("fadeOut");
+        setTimeout(() => {
+          document.querySelector("main").innerHTML = data;
+        }, 1000);
+      } else document.querySelector("main").innerHTML = data;
     });
 };
 const pages = ["landing", "about", "sponsors"];
 var page_serve = window.location.search.split("=");
 page_serve = page_serve.length > 1 ? page_serve[page_serve.length - 1] : 0;
-load(page_serve);
+load(page_serve, true);
 
 const next = (event) => {
   page_serve = (page_serve + 1) % pages.length;

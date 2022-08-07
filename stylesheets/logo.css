@@ -1,11 +1,14 @@
 .logo {
-  margin: auto;
-  width: 50%;
+  /* margin: auto; */
+  position: relative;
+  top: 50px;
+  /* width: 0px; */
+  margin: 0px 10px;
 }
 p {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
-  top: -38px;
+  top: 10px;
   color: #45597e;
 }
 .ellipse {

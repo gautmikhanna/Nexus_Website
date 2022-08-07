@@ -9,6 +9,12 @@
   animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-delay: 0.7s;
+  animation-iteration-count: 1;
+}
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -17,6 +23,14 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes popUp {
