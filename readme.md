@@ -12,8 +12,8 @@
 
 1. `open terminal and cd to project dir/`
 2. run 
-    > `$ npm build`(mac/linux) <br>
-    
-    > `npm run-script build`(windows)
+    - `$ npm build`(mac/linux) <br>
+
+    - `npm run-script build`(windows)
 3. `open index.html in vsCode`
 4. `start live server`
