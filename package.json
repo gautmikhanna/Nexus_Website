@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild ./stylesheets/main.css  --bundle --outfile=build/styles.css"
+    "build": "esbuild ./stylesheets/main.css  --bundle --outfile=build/styles.css",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.14.53",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "prettier": "2.7.1",
+    "pretty-quick": "^3.1.3"
   }
 }

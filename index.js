@@ -1,14 +1,12 @@
 const load = async (page) => {
-  fetch('./content/' + pages[page] + '.html')
+  fetch("./content/" + pages[page] + ".html")
     .then((response) => response.text())
     .then((data) => {
-      document.querySelector('main').innerHTML = data;
+      document.querySelector("main").innerHTML = data;
     });
 };
-
-const pages = ['landing', 'about', 'sponsors'];
-var page_serve = window.location.search.split('=');
-
+const pages = ["landing", "about", "sponsors"];
+var page_serve = window.location.search.split("=");
 page_serve = page_serve.length > 1 ? page_serve[page_serve.length - 1] : 0;
 load(page_serve);
 
@@ -26,5 +24,5 @@ const previous = (event) => {
   load(page_serve);
 };
 
-document.getElementById('next').addEventListener('click', next);
-document.getElementById('previous').addEventListener('click', previous);
+document.getElementById("next").addEventListener("click", next);
+document.getElementById("previous").addEventListener("click", previous);
