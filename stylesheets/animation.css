@@ -1,0 +1,35 @@
+.slideIn {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+.popUp {
+  animation-name: popUp;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
