@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   overflow: hidden;
+  user-select: none;
 }
 body {
   background-color: #0e0e0e;
@@ -20,6 +21,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-column {
+  flex-direction: column;
 }
 .web-top-container {
   width: 100%;
@@ -86,4 +90,22 @@ main {
 }
 i {
   color: white;
+}
+.web-top-left {
+  position: relative;
+  left: 10rem;
+  width: 30vw;
+  /* background-color: aqua; */
+  height: 70vh;
+}
+.web-top-left h1 {
+  font-size: 6rem;
+  letter-spacing: 8px;
+}
+.web-top-left p {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.particles-js-canvas-el {
+  opacity: 0.5;
 }
