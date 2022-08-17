@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap";
+
 /* stylesheets/logo.css */
 .logo {
   margin: auto;
@@ -6,16 +8,16 @@
   position: relative;
   top: 30px;
 }
-p {
+.logo p {
   font-size: 40px;
   position: relative;
   bottom: -14px;
-  color: #45597e;
+  color: var(--ternary-color);
   font-family: sans-serif;
   transform: rotate(90deg);
 }
 .ellipse {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -25,7 +27,7 @@ p {
   left: -8px;
 }
 .ellipse1 {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -35,7 +37,7 @@ p {
   left: -10px;
 }
 .ellipse2 {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -52,7 +54,7 @@ p {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #45597e;
+  background-color: var(--ternary-color);
   animation: rotate1 1.5s infinite linear;
 }
 .ellipse2::before {
@@ -63,7 +65,7 @@ p {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #45597e;
+  background-color: var(--ternary-color);
   animation: rotate2 1.5s infinite linear;
 }
 @keyframes rotate2 {
@@ -145,7 +147,7 @@ p {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: var(--primary-color);
 }
 .loader .logo {
   position: fixed;
@@ -158,16 +160,52 @@ p {
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #131313;
+  --secondary-color: #d9d9d9;
+  --ternary-color: #b0d8fa;
+  --font-color: #ffff;
+  --primary-font: "Comfortaa", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
+  user-select: none;
 }
 body {
-  background-color: #0e0e0e;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
   width: 100vw;
-  overflow: hidden;
-  color: white;
+  height: 100vh;
+  color: var(--font-color);
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+.snap-child {
+  scroll-snap-align: start;
+}
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+i {
+  color: var(--secondary-color);
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-family: var(--secondary-font);
+  color: var(--ternary-color);
+}
+
+/* stylesheets/utils.css */
 .no-display {
   display: none !important;
 }
@@ -176,71 +214,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.web-top-container {
-  width: 100%;
-  height: 100vh;
-}
-.web-top-container .fa-angle-down {
-  font-size: 30px;
-  position: absolute;
-  bottom: 40px;
-  right: 47%;
-  cursor: pointer;
-}
-.web-bottom-container {
-  position: relative;
-}
-.container {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 3.5rem);
-}
-main {
-  position: absolute;
-  width: 87vw;
-  height: 90vh;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.left-slide {
-  left: -83vw;
-}
-.right-slide {
-  right: -83vw;
-}
-.toggle-btn {
-  color: white;
-  cursor: pointer;
-  background: none;
-  border: none;
-  position: absolute;
-  top: 50%;
-  z-index: 50;
-  font-size: 40px;
-  transition: 0.2s;
-}
-.toggle-btn:hover {
-  transform: scale(1.2);
-  color: rgba(191, 191, 191, 0.617);
-}
-.toggle-btn-left {
-  left: 20px;
-}
-.toggle-btn-right {
-  right: 20px;
-}
-.particles-js-canvas-el {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-i {
-  color: white;
+.flex-column {
+  flex-direction: column;
 }
 
 /* stylesheets/header.css */
@@ -249,17 +224,15 @@ header {
   top: 0;
 }
 .navbar {
-  overflow: hidden;
-  background: #d9d9d9;
+  width: 100%;
   height: 3.5rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  overflow: hidden;
+  font-size: 1.2em;
 }
 
 /* stylesheets/animation.css */
@@ -333,6 +306,124 @@ header {
   100% {
     transform: translateX(90vw);
   }
+}
+.spin {
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* stylesheets/landing_page.css */
+.web-top-container .fa-angle-down {
+  font-size: 30px;
+  position: absolute;
+  bottom: 40px;
+  right: 47%;
+  cursor: pointer;
+}
+.web-top-container {
+  width: 100%;
+  height: 100vh;
+}
+.web-top-left {
+  position: relative;
+  left: 10rem;
+  width: 30vw;
+  height: 70vh;
+}
+.web-top-left h1 {
+  color: var(--font-color);
+  font-family: var(--secondary-font);
+  font-size: 7rem;
+  letter-spacing: 8px;
+}
+.web-top-left p {
+  color: var(--ternary-color);
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.particles-js-canvas-el {
+  opacity: 0.5;
+}
+.main-logo-container {
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+  overflow: hidden;
+}
+.main-logo {
+  position: absolute;
+  right: 0;
+  width: 90%;
+}
+.planet {
+  height: 80%;
+  z-index: 7;
+}
+.outer-ring {
+  height: 80%;
+}
+.ring-box {
+  height: 80%;
+  z-index: 5;
+}
+.stars {
+  width: 100%;
+}
+
+/* stylesheets/slide_page.css */
+.web-bottom-container {
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+}
+main {
+  position: absolute;
+  width: 87vw;
+  height: 85vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.left-slide {
+  left: -83vw;
+}
+.right-slide {
+  right: -83vw;
+}
+.toggle-btn {
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.toggle-btn:hover {
+  transform: scale(1.2);
+  color: rgba(191, 191, 191, 0.617);
+}
+.toggle-btn-left {
+  left: 20px;
+}
+.toggle-btn-right {
+  right: 20px;
 }
 
 /* stylesheets/main.css */

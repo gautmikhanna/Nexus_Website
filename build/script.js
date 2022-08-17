@@ -1,4 +1,4 @@
-const pages = ["landing", "about", "sponsors"];
+const pages = ["about", "sponsors"];
 const load = async (page, isReload = false, direction = "left") => {
   document
     .querySelectorAll(".toggle-btn")

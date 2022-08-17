@@ -18,8 +18,10 @@
   </head>
   <body id="particles-js">
     <header>
-      <nav class="navbar">
-        <a href="#">Scroll Top</a>
+      <nav class="navbar flex">
+        NE
+        <img src="./assets/favicon.svg" width="60" alt="X" />
+        US
       </nav>
     </header>
     <div class="loader flex">
@@ -31,13 +33,41 @@
         <div class="ellipse2"></div>
       </span>
     </div>
-    <div class="web-top-container flex">
-      NEXUS: what the hack
+    <div class="snap-child web-top-container flex">
+      <div class="web-top-left flex flex-column">
+        <h1>NEXUS</h1>
+        <p>What the hack</p>
+      </div>
+      <div class="main-logo-container flex">
+        <object class="main-logo" data="./assets/one.svg" type=""></object>
+        <object
+          class="main-logo stars"
+          data="./assets/two.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo outer-ring"
+          data="./assets/three.svg"
+          type=""
+        ></object>
+        <object class="main-logo" data="./assets/four.svg" type=""></object>
+        <object class="main-logo" data="./assets/five.svg" type=""></object>
+        <object
+          class="main-logo planet"
+          data="./assets/six.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo ring-box"
+          data="./assets/seven.svg"
+          type=""
+        ></object>
+      </div>
       <div>
         <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <div class="web-bottom-container" id="hack-info">
+    <div class="snap-child web-bottom-container" id="hack-info">
       <div class="flex container">
         <main class="left-slide"></main>
         <main id="main-content" class="mid-slide"></main>
@@ -50,9 +80,9 @@
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
-    <!-- <footer class="flex"></footer> -->
     <script src="./build/script.js"></script>
-    <script src="./scripts/particles.js"></script>
-    <script src="./scripts/particle-app.js"></script>
   </body>
+  <!-- particle js  -->
+  <script defer src="./scripts/particles.js"></script>
+  <script defer src="./scripts/particle-app.js"></script>
 </html>

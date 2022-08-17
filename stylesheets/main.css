@@ -1,5 +1,8 @@
 @import "./logo.css";
 @import "./loader.css";
 @import "./styles.css";
+@import "utils.css";
 @import "header.css";
 @import "./animation.css";
+@import "./landing_page.css";
+@import "./slide_page.css";
