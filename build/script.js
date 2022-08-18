@@ -59,7 +59,6 @@ const load = async (page, isReload = false, direction = "left") => {
 };
 const next = (event) => {
   page_serve = (page_serve + 1) % pages.length;
-  console.log(page_serve);
   load(page_serve);
 };
 const previous = (event) => {
@@ -74,3 +73,19 @@ page_serve = page_serve.length > 1 ? page_serve[page_serve.length - 1] : 0;
 load(page_serve, true);
 document.getElementById("next").addEventListener("click", next);
 document.getElementById("previous").addEventListener("click", previous);
+document.querySelector("body").addEventListener("scroll", () => {
+  const dimension = document
+    .querySelector(".web-bottom-container")
+    .getClientRects();
+  if (dimension[0].top < 295) {
+    document
+      .querySelector(".main-logo-container")
+      .classList.add("navigation-logo");
+    document.querySelector(".main-logo-container").classList.add("spin");
+  } else {
+    document
+      .querySelector(".main-logo-container")
+      .classList.remove("navigation-logo");
+    document.querySelector(".main-logo-container").classList.remove("spin");
+  }
+});

@@ -204,6 +204,37 @@ h1 {
   font-family: var(--secondary-font);
   color: var(--ternary-color);
 }
+.navigation-logo {
+  width: 300px !important;
+  height: 300px !important;
+  overflow: hidden;
+  position: fixed !important;
+  bottom: -14%;
+  right: 39%;
+  z-index: 10;
+  border-radius: 50%;
+}
+.navigation-logo .main-logo {
+  right: -10%;
+  width: 30rem;
+  height: 30rem;
+}
+.btn {
+  cursor: pointer;
+  width: 300px;
+  background: none;
+  color: var(--font-color);
+  border: none;
+  border: 2px solid var(--ternary-color);
+  border-radius: 5px;
+  margin-top: 50px;
+  font-family: var(--secondary-font);
+  padding: 10px 20px;
+}
+.btn:hover {
+  transition: 0.2s;
+  transform: scale(1.04);
+}
 
 /* stylesheets/utils.css */
 .no-display {
@@ -222,17 +253,26 @@ h1 {
 header {
   position: sticky;
   top: 0;
+  margin: auto;
+  background: var(--secondary-color);
 }
 .navbar {
-  width: 100%;
+  width: 90%;
   height: 3.5rem;
-  background: var(--secondary-color);
   color: var(--primary-color);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   overflow: hidden;
   font-size: 1.2em;
+  justify-content: space-between;
+}
+header i {
+  color: var(--primary-color) !important;
+  margin: 0px 10px;
+  padding: 0px;
+  transition: 0.2s;
+}
+header i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* stylesheets/animation.css */
@@ -308,7 +348,7 @@ header {
   }
 }
 .spin {
-  animation: spin 3s linear infinite;
+  animation: spin 5s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -333,7 +373,6 @@ header {
 }
 .web-top-left {
   position: relative;
-  left: 10rem;
   width: 30vw;
   height: 70vh;
 }
@@ -354,14 +393,14 @@ header {
 }
 .main-logo-container {
   position: relative;
-  width: 70vw;
-  height: 80vh;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .main-logo {
   position: absolute;
-  right: 0;
-  width: 90%;
+  right: 15%;
+  height: 50rem;
+  width: 50rem;
 }
 .planet {
   height: 80%;
@@ -376,6 +415,12 @@ header {
 }
 .stars {
   width: 100%;
+}
+.main-logo-container-outer {
+  position: relative;
+  left: 15rem;
+  width: 50rem;
+  height: 50rem;
 }
 
 /* stylesheets/slide_page.css */
@@ -396,7 +441,6 @@ main {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .left-slide {
   left: -83vw;
@@ -405,25 +449,25 @@ main {
   right: -83vw;
 }
 .toggle-btn {
-  color: white;
+  color: var(--font-color);
   cursor: pointer;
   background: none;
   border: none;
   position: absolute;
-  top: 50%;
+  bottom: 40px;
   z-index: 50;
   font-size: 40px;
   transition: 0.2s;
 }
 .toggle-btn:hover {
   transform: scale(1.2);
-  color: rgba(191, 191, 191, 0.617);
+  color: var(--secondary-color);
 }
 .toggle-btn-left {
-  left: 20px;
+  left: 40%;
 }
 .toggle-btn-right {
-  right: 20px;
+  right: 35%;
 }
 
 /* stylesheets/main.css */

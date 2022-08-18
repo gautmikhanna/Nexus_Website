@@ -1,15 +1,25 @@
 header {
   position: sticky;
   top: 0;
+  margin: auto;
+  background: var(--secondary-color);
 }
 .navbar {
-  width: 100%;
+  width: 90%;
   height: 3.5rem;
-  background: var(--secondary-color);
   color: var(--primary-color);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   overflow: hidden;
   font-size: 1.2em;
+  justify-content: space-between;
+}
+header i {
+  color: var(--primary-color) !important;
+  margin: 0px 10px;
+  padding: 0px;
+  transition: 0.2s;
+}
+
+header i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

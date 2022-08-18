@@ -1,4 +1,4 @@
-const pages = [ "about", "sponsors"];
+const pages = ["about", "sponsors"];
 
 // load Content js start here
 
@@ -76,7 +76,7 @@ const load = async (page, isReload = false, direction = "left") => {
  */
 const next = (event) => {
   page_serve = (page_serve + 1) % pages.length;
-  console.log(page_serve);
+  // console.log(page_serve);
   load(page_serve);
 };
 /**
@@ -101,3 +101,23 @@ load(page_serve, true);
 // page toggle
 document.getElementById("next").addEventListener("click", next);
 document.getElementById("previous").addEventListener("click", previous);
+
+// scrolling navigation
+
+document.querySelector("body").addEventListener("scroll", () => {
+  const dimension = document
+    .querySelector(".web-bottom-container")
+    .getClientRects();
+  if (dimension[0].top < 295) {
+    // console.log('hii')
+    document
+      .querySelector(".main-logo-container")
+      .classList.add("navigation-logo");
+    document.querySelector(".main-logo-container").classList.add("spin");
+  } else {
+    document
+      .querySelector(".main-logo-container")
+      .classList.remove("navigation-logo");
+    document.querySelector(".main-logo-container").classList.remove("spin");
+  }
+});
