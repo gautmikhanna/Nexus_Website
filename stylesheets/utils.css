@@ -20,3 +20,7 @@
 .flex-space-eve {
   justify-content: space-evenly;
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
