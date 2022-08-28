@@ -16,3 +16,19 @@
   line-height: 2;
   font-family: var(--primary-font);
 }
+
+@media screen and (max-width: 1232px) {
+  .about-box {
+    width: 30%;
+  }
+  .about-box-right {
+    bottom: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .about-box {
+    width: 50%;
+  }
+}
