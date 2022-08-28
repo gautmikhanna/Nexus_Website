@@ -1,6 +1,18 @@
 /* about page */
 .aboutPage {
   width: 100%;
-  height: 90vh;
-  /* background-color: #4c3575; */
+  min-height: 90vh;
+}
+.about-box {
+  width: 30%;
+}
+.about-image {
+  width: 100%;
+}
+.about-box-right {
+  position: relative;
+  bottom: 5rem;
+  width: 65%;
+  line-height: 2;
+  font-family: var(--primary-font);
 }

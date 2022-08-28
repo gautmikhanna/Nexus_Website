@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/acbd692ad8.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- css file -->
+    <!-- stylesheets file -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
@@ -19,27 +27,38 @@
     <link rel="stylesheet" href="./styles/faqPage.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
 
-    <!--  -->
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- page title -->
+    <title>Nexus</title>
   </head>
   <body>
     <!-- ---------------------------------------------------------------------------- -->
-
     <!-- NAVBAR -->
     <nav class="navbar flex f-space-eve">
       <a href="/">
-        <div class="nav-logo">NEXUS</div>
+        <div class="nav-logo">
+          <!-- <img src="./assets/favicon.svg" alt="" /> -->
+          NEXUS
+        </div>
       </a>
       <div class="list flex">
         <div class="item">ABOUT</div>
+        <div class="item">SCHEDULE</div>
         <div class="item">THEMES</div>
         <div class="item">SPONSORS</div>
         <div class="item">TEAM</div>
+        <div class="item">PRIZE</div>
+        <div class="item">FAQS</div>
+        <div class="item">SPEAKERS</div>
+        <div class="item">JUDGES</div>
+        <div class="item">CONTACT</div>
       </div>
     </nav>
+
     <!-- ---------------------------------------------------------------------------- -->
     <!-- LANDING PAGES -->
     <section class="homepage flex f-space-btw">
@@ -64,34 +83,45 @@
           <a href="#"><i class="fa-brands fa-dev"></i></a>
         </div>
       </div>
-      <div></div>
+      <div class="home-image-box">
+        <img src="./assets/pic3.svg" alt="" srcset="" />
+      </div>
     </section>
 
     <!-- ---------------------------------------------------------------------------- -->
 
     <!-- ABOUT PAGE -->
-    <section class="aboutPage container flex f-col f-space-eve">
-      <div class="section-head flex">ABOUT</div>
-      <p>
-        Welcome to "Nexus: What the hack!", a 24-hour fun-filled hackathon
-        hosted by the Elixir Community of ABES Engineering College under the
-        umbrella of our biggest TechFest Pravaah.
-      </p>
-      <p>
-        We welcome technocrats from all over the region who are willing to come
-        up with the most innovative solutions to address issues in the real
-        world. Our mission is to provide participants with a chance for hands-on
-        learning, forming strong networks, and mentoring from those currently
-        working in the field. Participating in a hackathon is an unforgettable
-        experience that every technophile should have once in their life. Come
-        hack with Elixir!
-      </p>
+    <section class="aboutPage container flex f-space-eve f-wrap">
+      <div class="about-box flex">
+        <img src="./assets/pic2.svg" alt="about-image" class="about-image" />
+      </div>
+      <div class="about-box-right flex f-col">
+        <div class="section-head flex">ABOUT</div>
+        <p>
+          Welcome to "Nexus: What the hack!", a 24-hour fun-filled hackathon
+          hosted by the Elixir Community of ABES Engineering College under the
+          umbrella of our biggest TechFest Pravaah.
+        </p>
+        <p>
+          We welcome technocrats from all over the region who are willing to
+          come up with the most innovative solutions to address issues in the
+          real world. Our mission is to provide participants with a chance for
+          hands-on learning, forming strong networks, and mentoring from those
+          currently working in the field. Participating in a hackathon is an
+          unforgettable experience that every technophile should have once in
+          their life. Come hack with Elixir!
+        </p>
+      </div>
     </section>
-    <section class="aboutPage container flex f-col f-space-eve">
-      <div class="section-head flex">SCHEDULE</div>
-      <div class="calendar-container flex">
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- schedule page -->
+    <section class="schedulePage container flex f-space-eve">
+      <div class="calendar-container schedule-box-right flex f-col">
+        <div class="section-head flex">SCHEDULE</div>
         <div class="calendar">
           <div class="cal-top flex">OCTOBER</div>
+
           <div class="cal-weekday">
             <div class="cla-week-row flex f-space-btw">
               <span class="date flex">SUN</span>
@@ -161,7 +191,11 @@
           </div>
         </div>
       </div>
+      <div class="schedule-box">
+        <img src="./assets/pic1.svg" alt="" />
+      </div>
     </section>
+
     <!-- ---------------------------------------------------------------------------- -->
     <!-- THEMES -->
     <section class="themePage container flex f-col">
@@ -253,6 +287,7 @@
         </div>
       </div>
     </section>
+
     <!-- ---------------------------------------------------------------------- -->
     <!-- SPONSORS -->
     <section class="aboutPage container flex f-col f-space-eve">
@@ -264,6 +299,7 @@
         eaque.
       </p>
     </section>
+
     <!-- ---------------------------------------------------------------------------- -->
     <!-- TEAM -->
     <section class="aboutPage container flex f-col f-space-eve">
@@ -399,6 +435,7 @@
         eaque.
       </p>
     </section>
+
     <!-- contact form -->
     <!-- ---------------------------------------------------------------------------- -->
 
@@ -410,6 +447,14 @@
         <a href="#"><i class="fa-brands fa-dev"></i></a>
       </div>
     </footer>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ---------------------------------------------------------------------------- -->
     <script src="./scripts/faq.js"></script>
   </body>
 </html>

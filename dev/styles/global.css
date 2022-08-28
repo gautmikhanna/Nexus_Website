@@ -1,8 +1,10 @@
 /* global styles */
 
 .custom-btn {
-  padding: 20px 30px;
-  font-size: 17px;
+  min-width: 200px;
+  /* width: 1000px !important; */
+  padding: 10px 20px !important;
+  font-size: 17px !important;
   color: #fff;
   border-radius: 5px;
   font-family: "Lato", sans-serif;

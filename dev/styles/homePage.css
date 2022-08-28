@@ -8,10 +8,21 @@
     var(--secondary-color),
     var(--ternary-color)
   );
+  overflow: hidden;
 }
-
+.home-image-box {
+  position: relative;
+  top: 17px;
+  width: 50%;
+  /* background-color: aqua; */
+  height: 100%;
+}
+.home-image-box img {
+  width: 100%;
+  height: 100%;
+}
 .logo-container {
-  width: 40%;
+  width: 50%;
   padding: 0px 100px;
   color: var(--font-color);
 }
@@ -29,5 +40,5 @@
 }
 .button-box {
   margin-top: 20px;
-  width: 60%;
+  width: 70%;
 }
