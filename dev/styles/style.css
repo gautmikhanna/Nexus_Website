@@ -5,9 +5,10 @@
   margin: 0;
 }
 :root {
-  --primary-color: #371b58;
-  --secondary-color: #4c3575;
-  --ternary-color: #7858a6;
+  --primary-color: #0f0c29;
+  --secondary-color: #302b63;
+  --ternary-color: #24243e;
+  --container-color: rgb(61, 69, 118);
   --font-color: #fff;
   --font-color-dark: #000;
   --primary-font: "Ubuntu", sans-serif;
@@ -15,6 +16,7 @@
   --heading-font: "Bebas Neue", cursive;
 }
 html {
+  overflow-x: hidden;
 }
 body {
   font-family: var(--primary-font);

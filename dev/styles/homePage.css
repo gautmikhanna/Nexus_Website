@@ -2,7 +2,12 @@
 .homepage {
   width: 100%;
   height: calc(85vh - 50px);
-  background-image: linear-gradient(to right, #6441a5, #2a0845);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
 }
 
 .logo-container {
@@ -25,32 +30,4 @@
 .button-box {
   margin-top: 20px;
   width: 60%;
-}
-
-.calendar-container {
-  height: 100%;
-  width: 40vw;
-}
-.calendar {
-  position: relative;
-  left: 5%;
-  height: 50%;
-  width: 90%;
-  background-color: #fff;
-  border-radius: 10px;
-
-  overflow: hidden;
-}
-.cal-top {
-  width: 100%;
-  height: 15%;
-  background-color: var(--secondary-color);
-}
-.cal-mid {
-  width: 100%;
-  height: 70%;
-}
-.cal-bottom {
-  height: 15%;
-  width: 100%;
 }

@@ -1,0 +1,64 @@
+.calendar-container {
+  height: 100%;
+  width: 40vw;
+}
+.calendar {
+  /* position: relative;
+    left: 5%; */
+  height: 50%;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.224);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px var(--primary-color);
+}
+.cal-top {
+  width: 100%;
+  height: 15%;
+  background-color: #302b638a;
+  border-bottom: 1px solid var(--primary-color);
+  backdrop-filter: blur(5px);
+}
+.cal-weekday {
+  width: 100%;
+  height: 15%;
+}
+.cal-weekday .cla-week-row {
+  width: 100%;
+  height: 100%;
+}
+.cal-weekday .cla-week-row .date {
+  color: var(--font-color);
+  height: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 14%;
+}
+
+.cal-mid {
+  width: 100%;
+  height: 70%;
+}
+.cla-mid-row {
+  position: relative;
+  width: 100%;
+  height: 15.8%;
+}
+
+.cla-mid-row .date {
+  cursor: pointer;
+  color: var(--font-color);
+  height: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 14%;
+}
+.cla-mid-row .fade {
+  color: rgba(255, 255, 255, 0.201);
+}
+.cla-mid-row .date:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+}
