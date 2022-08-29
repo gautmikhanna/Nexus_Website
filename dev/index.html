@@ -69,13 +69,13 @@
 
     <!-- ---------------------------------------------------------------------------- -->
     <!-- LANDING PAGES -->
-    <section class="homepage flex f-space-btw">
-      <div class="logo-container flex f-col f-align-start">
+    <section class="homepage flex" id="particles-js">
+      <div class="logo-container flex f-col">
         <h1>NEXUS</h1>
         <h3>What the hack</h3>
         <p>
-          Join us on 20th November 2021 with over 300 students from across the
-          nation for 24 hours of creation, innovation, & fun.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda,
+          laboriosam.
         </p>
         <div class="button-box flex f-space-btw">
           <button class="custom-btn btn-11">
@@ -84,15 +84,15 @@
           </button>
           <button class="custom-btn btn-11">More Details</button>
         </div>
-        <div class="social">
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+        <div class="social flex">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
           <a href="#"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-dev"></i></a>
         </div>
       </div>
-      <div class="home-image-box">
-        <img src="./assets/pic3.svg" alt="" srcset="" />
+      <div class="home-image">
+        <img src="./assets/one.png" alt="" />
       </div>
     </section>
 
@@ -101,7 +101,7 @@
     <!-- ABOUT PAGE -->
     <section class="aboutPage container flex f-space-eve f-wrap">
       <div class="about-box flex">
-        <img src="./assets/pic2.svg" alt="about-image" class="about-image" />
+        <img src="./assets/rocket.png" alt="about-image" class="about-image" />
       </div>
       <div class="about-box-right flex f-col">
         <div class="section-head flex">ABOUT</div>
@@ -200,7 +200,7 @@
         </div>
       </div>
       <div class="schedule-box">
-        <img src="./assets/pic1.svg" alt="" />
+        <img src="./assets/schedule.png" alt="" />
       </div>
     </section>
 
@@ -381,12 +381,10 @@
     <!-- TEAM -->
     <section class="aboutPage container flex f-col f-space-eve">
       <div class="section-head flex">OUR TEAM</div>
-      <div class="team-page-section">
+      <!-- <div class="team-page-section">
         <div class="container">
-          <!-- Sec Title -->
 
           <div class="row clearfix">
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -421,7 +419,6 @@
                 </div>
               </div>
             </div>
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -456,7 +453,6 @@
                 </div>
               </div>
             </div>
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -491,7 +487,6 @@
                 </div>
               </div>
             </div>
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -526,7 +521,6 @@
                 </div>
               </div>
             </div>
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -561,7 +555,6 @@
                 </div>
               </div>
             </div>
-            <!-- Team Block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12">
               <div
                 class="inner-box wow fadeInLeft"
@@ -598,13 +591,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
-        aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
-        consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
-        eaque.
-      </p> -->
+      </div> -->
     </section>
     <!-- ------------------------------------------------------------------------ -->
     <!-- PRIZES -->
@@ -727,21 +714,44 @@
       <div>
         <h1>Contact Form</h1>
       </div>
-
-      <div>
-        <form class="flex f-col">
-          <input type="text" name="Name" placeholder="Name" required="" />
-          <input type="text" name="Email" placeholder="Email" required="" />
-          <textarea
-            name="Message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Message"
-            required=""
-          ></textarea>
-          <button class="btn gradient-text" type="submit">Submit</button>
-        </form>
+      <div class="flex f-space-btw f-wrap">
+        <img class="contact-image" src="./assets/contact.png" />
+        <div>
+          <div class="contact-form-wrapper d-flex justify-content-center">
+            <form action="#" class="contact-form">
+              <div>
+                <input
+                  type="text"
+                  class="form-control rounded border-white mb-3 form-input"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  class="form-control rounded border-white mb-3 form-input"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  id="message"
+                  class="form-control rounded border-white mb-3 form-text-area"
+                  rows="5"
+                  cols="30"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="submit-button-wrapper">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -750,10 +760,10 @@
 
     <footer class="flex">
       <div class="social flex">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
         <a href="#"><i class="fas fa-envelope"></i></a>
-        <a href="#"><i class="fa-brands fa-dev"></i></a>
       </div>
     </footer>
 
@@ -766,5 +776,7 @@
     <!-- ---------------------------------------------------------------------------- -->
     <script src="./scripts/faq.js"></script>
     <script src="./scripts/script.js"></script>
+    <script async src="./scripts/particles.js"></script>
+    <script async src="./scripts/particle-app.js"></script>
   </body>
 </html>

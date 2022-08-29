@@ -31,3 +31,14 @@ p {
   padding: 10px;
   font-size: 20px;
 }
+
+/*  */
+/* Particle Js Custom CSS */
+.particles-js-canvas-el {
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
