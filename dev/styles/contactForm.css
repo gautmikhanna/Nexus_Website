@@ -3,6 +3,7 @@
   padding: 10px 0px;
 }
 .contact-form-wrapper {
+  width: 35% !important;
   padding: 20px 0px;
 }
 
@@ -82,4 +83,13 @@
 }
 .contact-image {
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .contact-image {
+    width: 80%;
+  }
+}
+.contact-form-wrapper {
+  width: 90%;
+  margin: auto;
 }

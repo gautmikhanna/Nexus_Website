@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* global styles */
 
 .custom-btn {
@@ -94,12 +98,12 @@
 .section-head {
   letter-spacing: 5px;
   width: 100%;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: var(--heading-font);
 }
 .container {
   margin: 20px auto;
-  width: 90% !important;
+  width: 90%;
   border-radius: 10px;
 }
 .container:nth-child(even) {
@@ -113,4 +117,13 @@
 }
 .social a {
   margin-right: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .section-head {
+    font-size: 5rem;
+  }
 }

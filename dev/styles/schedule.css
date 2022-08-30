@@ -1,8 +1,5 @@
-.schedulePage {
-  min-height: 100vh;
-}
 .schedule-box {
-  width: 30%;
+  width: 40%;
 }
 .schedule-box img {
   width: 100%;
@@ -72,4 +69,26 @@
 
 .cla-mid-row .date:hover {
   background-color: rgba(255, 255, 255, 0.227);
+}
+.dot {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+.schedulePage .para {
+  margin: 30px auto;
+  padding: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .schedule-box {
+    width: 90%;
+  }
+  .schedule-box-right {
+    width: 100%;
+  }
 }

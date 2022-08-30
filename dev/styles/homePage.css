@@ -1,3 +1,8 @@
+/**
+Do not modify this file
+Home page final css file
+**/
+
 /* homepage design */
 .homepage {
   width: 100%;
@@ -10,47 +15,68 @@
   );
   overflow: hidden;
 }
+.logo-container {
+  position: relative;
+  top: 10px;
+}
 .home-image-box {
   position: relative;
   top: 17px;
   width: 50%;
-  /* background-color: aqua; */
   height: 100%;
-}
-
-.logo-container {
-  width: 50%;
-  padding: 0px 100px;
-  color: var(--font-color);
-}
-.logo-container h1 {
-  font-size: 5rem;
-}
-.logo-container h3 {
-  font-size: 2rem;
-  margin: 30px 0px;
-}
-.logo-container p {
-  font-size: 1rem;
-  line-height: 2;
-  font-family: var(--primary-font);
-}
-.button-box {
-  margin-top: 20px;
-  width: 70%;
-}
-
-.homepage .social {
-  width: 70%;
-  /* background-color: aqua; */
-  margin: 20px auto;
+  z-index: 100;
 }
 .home-image {
   width: 40%;
-  /* height: 100%; */
+  position: relative;
+  bottom: 2rem;
+  z-index: 15;
 }
 .home-image img {
   width: 100%;
   object-fit: cover;
   z-index: 10;
+}
+.home-heading {
+  letter-spacing: 1rem;
+  font-family: var(--heading-font);
+  font-size: 10rem;
+  color: white;
+  font-weight: bolder;
+}
+.homepage h3 {
+  color: rgba(255, 255, 255, 0.483);
+  font-size: 40px;
+  font-family: var(--primary-font);
+}
+@media screen and (max-width: 800px) {
+  .logo-container {
+    width: 100%;
+  }
+  .home-image {
+    width: 80%;
+  }
+  .home-image img {
+    width: 60%;
+    /* margin: auto; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    width: 100%;
+  }
+  .home-heading {
+    font-size: 6rem;
+  }
+  .homepage h3 {
+    font-size: 2rem;
+  }
+  .home-image {
+    width: 100%;
+  }
+  .home-image img {
+    width: 100%;
+    /* margin: auto; */
+  }
 }
