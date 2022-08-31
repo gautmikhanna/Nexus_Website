@@ -26,8 +26,7 @@
   padding-left: 16px;
 }
 
-
-#contact-box{
+#contact-box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -76,7 +75,7 @@
   text-align: center;
 }
 
-.contact-box{
+.contact-box {
   width: 90% !important;
   margin: auto !important;
 }
@@ -103,14 +102,13 @@
     width: 80%;
   }
 
-  
-.contactPage .section-head{
-  text-align: center;
-}
-.contact-form-wrapper{
-  width: 90%;
-}
-#contact-box{
-  flex-direction: column;
-}             
+  .contactPage .section-head {
+    text-align: center;
+  }
+  .contact-form-wrapper {
+    width: 90%;
+  }
+  #contact-box {
+    flex-direction: column;
+  }
 }

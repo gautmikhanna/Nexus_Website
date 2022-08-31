@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .faqPage {
   min-height: 90vh;
@@ -55,22 +55,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}
 .accordion-text li .question-arrow .question {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
   transition: all 0.3s ease;
   text-align: left;
-
-} 
-.accordion-text li p{
+}
+.accordion-text li p {
   color: rgba(24, 255, 101, 0.874) !important;
   font-size: 16px;
   text-align: justify;
   letter-spacing: 1px;
 }
-
 
 .accordion-text li .question-arrow .arrow {
   font-size: 20px;
@@ -82,7 +80,7 @@
 }
 .accordion-text li:hover .question-arrow .question,
 .accordion-text li:hover .question-arrow .arrow {
-  scale:0.98;
+  scale: 0.98;
 }
 .accordion-text li .line {
   display: block;
@@ -120,12 +118,11 @@
   color: #fff;
 }
 
-
-.faq-right{
+.faq-right {
   width: 60%;
 }
 
-.bottom-info{
+.bottom-info {
   font-size: 13px;
   margin: auto;
   color: white;

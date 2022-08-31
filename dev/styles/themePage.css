@@ -106,6 +106,10 @@
   border-radius: unset;
   height: 300px;
 }
+.card:hover .card--title {
+  color: white;
+}
+
 .deco-2 {
   background-color: #227c9d;
 }
@@ -116,12 +120,22 @@
   background-color: #ffcb77;
 }
 .deco-5 {
-  background-color: #fe6d73;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
 }
 
 .deco-6 {
   background-color: green;
 }
+
+.theme {
+  color: var(--ternary-color);
+}
+
 @media screen and (max-width: 1200px) {
   .section-data {
     margin-bottom: 4rem;
