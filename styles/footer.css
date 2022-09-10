@@ -7,7 +7,6 @@ footer {
 
 footer .social {
   margin: 0;
-  width: 80% !important;
   padding: 0px !important;
   height: 100% !important;
 }
@@ -18,5 +17,36 @@ footer .social {
   }
   .social a {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerLogo {
+    width: 70px;
+  }
+}
+
+.footerLogo {
+  width: 100px;
+  border-radius: 200px;
+}
+footer .social i {
+  transition: 0.5s;
+}
+.footerLogo:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+#footerLogos {
+  height: 220px;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #footerLogos {
+    height: 100%;
   }
 }

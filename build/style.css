@@ -657,13 +657,17 @@ Home page final css file
 
 .faqPage {
   min-height: 90vh;
+  width: 85%;
+  padding: 0px;
+  color: white;
 }
+
 .accordion {
   display: flex;
   font-family: Poppins !important;
-  max-width: 1010px;
   width: 100%;
-  border-radius: 5px;
+  margin: 0px !important;
+  border-radius: 10px;
   background-image: linear-gradient(
     to right,
     var(--primary-color),
@@ -672,45 +676,60 @@ Home page final css file
   ) !important;
   align-items: center;
   justify-content: space-between;
-  border-radius: 25px;
   height: 100%;
   padding: 25px 90px 25px 60px;
 }
+
 .accordion .image-box {
   height: 360px;
   width: 300px;
 }
+
 .accordion .image-box img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+
 .accordion .accordion-text {
   width: 100%;
 }
+
 .accordion .accordion-text .title {
   font-size: 35px;
   font-weight: 600;
   color: white;
   font-family: "Fira Sans", sans-serif;
 }
+
 .accordion .accordion-text .faq-text {
   margin-top: 25px;
   height: 353px;
   overflow-y: auto;
 }
+
 .faq-text::-webkit-scrollbar {
   display: none;
 }
+
 .accordion .accordion-text li {
   list-style: none;
   cursor: pointer;
 }
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
 .accordion-text li .question-arrow {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent !important;
+  color: white !important;
+  padding: 5px 10px;
 }
+
 .accordion-text li .question-arrow .question {
   font-size: 18px;
   font-weight: 500;
@@ -718,6 +737,7 @@ Home page final css file
   transition: all 0.3s ease;
   text-align: left;
 }
+
 .accordion-text li p {
   color: rgba(24, 255, 101, 0.874) !important;
   font-size: 16px;
@@ -730,13 +750,16 @@ Home page final css file
   color: #fff;
   transition: all 0.3s ease;
 }
+
 .accordion-text li.showAnswer .question-arrow .arrow {
   transform: rotate(-180deg);
 }
+
 .accordion-text li:hover .question-arrow .question,
 .accordion-text li:hover .question-arrow .arrow {
   scale: 0.98;
 }
+
 .accordion-text li .line {
   display: block;
   height: 2px;
@@ -744,26 +767,31 @@ Home page final css file
   margin: 10px 0;
   background: rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 820px) {
   .accordion {
     flex-direction: column;
   }
+
   .accordion .image-box {
-    height: 360px;
+    height: 300px;
     width: 300px;
     width: 100%;
     border-radius: 25px;
     padding: 30px;
   }
+
   .accordion .faq-right {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
+
 @media (max-width: 538px) {
   .accordion {
     padding: 25px;
   }
+
   .accordion-text li p {
     width: 98%;
   }
@@ -782,8 +810,7 @@ Home page final css file
   margin: auto;
   color: white;
   letter-spacing: 1px;
-}
-/* footer style */
+} /* footer style */
 footer {
   width: 100%;
   background-color: var(--primary-color);
@@ -792,7 +819,6 @@ footer {
 
 footer .social {
   margin: 0;
-  width: 80% !important;
   padding: 0px !important;
   height: 100% !important;
 }
@@ -806,6 +832,36 @@ footer .social {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footerLogo {
+    width: 70px;
+  }
+}
+
+.footerLogo {
+  width: 100px;
+  border-radius: 200px;
+}
+footer .social i {
+  transition: 0.5s;
+}
+.footerLogo:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+#footerLogos {
+  height: 220px;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #footerLogos {
+    height: 100%;
+  }
+}
 .team-page-section {
   position: relative;
   padding-top: 70px;
